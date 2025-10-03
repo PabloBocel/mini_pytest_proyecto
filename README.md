@@ -1,22 +1,8 @@
-# Mini proyecto: cálculo + validación + acción (con Pytest)
+# Mini proyecto
 
-## Estructura
-```
-mini_pytest_proyecto/
-├─ src/myapp/
-│  ├─ __init__.py
-│  ├─ calc.py
-│  ├─ validation.py
-│  ├─ action.py
-│  └─ flow.py
-├─ tests/
-│  ├─ test_unit_calc.py
-│  ├─ test_unit_validation.py
-│  ├─ test_unit_action.py
-│  ├─ test_integration_calc_validation.py
-│  └─ test_e2e_flow.py
-└─ pyproject.toml
-```
+#Imagen de pruebas pasadas
+<img width="1459" height="195" alt="image" src="https://github.com/user-attachments/assets/3fb6475f-827d-4d26-8d02-944f5e4dfb7e" />
+
 
 ## Cómo correr
 1) Instala pytest si hace falta:
