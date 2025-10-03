@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "myapp"
+version = "0.1.0"
+description = "Mini proyecto con módulos de cálculo, validación, acción y pruebas con pytest"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q --maxfail=1"
+testpaths = ["tests"]
