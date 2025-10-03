@@ -9,7 +9,7 @@
 ```bash
 pip install pytest
 ```
-2) Desde la carpeta `mini_pytest_proyecto`, ejecuta:
+2) Desde la terminal ejecuta:
 ```bash
 pytest
 ```
