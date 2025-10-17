@@ -11,5 +11,5 @@ def compute_total(items: Iterable[Dict[str, float]], tax_rate: float) -> float:
         price = float(it["price"])
         qty = int(it.get("qty", 1))
         subtotal += price * qty
-    total = round(subtotal * (1.0 + tax_rate), 2)
+    total = round(subtotal * (1.0 + tax_rate), 3)
     return total
