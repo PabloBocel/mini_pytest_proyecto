@@ -1,14 +1,12 @@
-# Nombre del pipeline que aparecerá en la pestaña "Actions" de GitHub
 name: Build, Test and Analyze
 
-# Disparadores: push, PR y manual (dispatch)
 on:
   push:
     branches:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
-  workflow_dispatch: {}   # <-- permite ejecutarlo manualmente
+  workflow_dispatch: {}
 
 jobs:
   build-test-analyze:
@@ -38,7 +36,6 @@ jobs:
             --cov=. --cov-report=xml:coverage.xml \
             --junitxml=pytest-junit.xml
 
-      # Subir evidencias como artifacts
       - name: Upload test artifacts
         uses: actions/upload-artifact@v4
         with:
