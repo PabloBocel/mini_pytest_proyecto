@@ -47,7 +47,7 @@ jobs:
 
       # 5. Ejecutar el análisis de SonarQube
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@f6f600f12d5d7e17c99ac5a060e34011d0111264
+        uses: SonarSource/sonarqube-scan-action@fd88b7d7ccbaefd23d8f36f73b59db7a3d246602
         env:
           # El token que guardaste en los secretos de GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
